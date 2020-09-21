@@ -25,6 +25,14 @@ public class Vector_pratice {
 			System.out.print("["+list.get(i)+"] ");
 		}
 			System.out.println();
+			
+		list.remove(3);
+		size = list.size();
+		for(int i=0; i<size; i++)
+		{
+			System.out.print("["+list.get(i)+"] ");
+		}
+			System.out.println();
 	}
 
 }
