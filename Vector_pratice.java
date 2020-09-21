@@ -10,6 +10,21 @@ public class Vector_pratice {
 		list.add("B");
 		list.add("C");
 
+		size = list.size();
+		for(int i=0; i<size; i++)
+		{
+			System.out.print("["+list.get(i)+"] ");
+		}
+			System.out.println();
+			
+		list.add(2,"D");
+		list.add(3,"E");
+		size = list.size();
+		for(int i=0; i<size; i++)
+		{
+			System.out.print("["+list.get(i)+"] ");
+		}
+			System.out.println();
 	}
 
 }
