@@ -16,25 +16,34 @@ public class Arraylist_pratice {
 	public static void update(ArrayList list,int index,String str){
 		list.set(index, str);
 	}
+	
+	public static void print(ArrayList list){
+		int size= list.size();
+		
+		if(size == 0 ){
+			System.out.println("none");
+		}
+		else{
+			System.out.println(list);
+		}
+	}
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList<String>();
-
-		list.add("A");
-		list.add("B");
-		list.add("C");
 		
-		System.out.println(list);
+		print(list);
 		
 		add(list,"a");
-		System.out.println(list);
+		add(list,"b");
+		add(list,"c");
+		print(list);
 		
 		remove(list,"a");
-		System.out.println(list);
+		print(list);
 		
 		remove_2(list,0);
-		System.out.println(list);
+		print(list);
 		
-		update(list,0,"c");
+		update(list,0,"d");
 		System.out.println(list);
 	}
 
