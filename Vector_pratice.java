@@ -19,25 +19,34 @@ public class Vector_pratice {
 		v.set(index, str);
 	}
 	
+	public static void print(Vector v){
+		int size= v.size();
+		
+		if(size == 0 ){
+			System.out.println("none");
+		}
+		else{
+			System.out.println(v);
+		}
+	}
+	
 	public static void main(String[] args) {
 		Vector v = new Vector();
+		print(v);
 		
 		v.add("a");
 		v.add("b");
 		v.add("c");	
-		System.out.println(v);
 
 		add(v,"d");
-		System.out.println(v);
+		print(v);
 		
 		remove(v,"b");
-		System.out.println(v);
-		
 		remove2(v,2);
-		System.out.println(v);
+		print(v);
 		
 		update(v,1,"3");
-		System.out.println(v);
+		print(v);
 	}
 
 }
