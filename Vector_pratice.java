@@ -15,6 +15,10 @@ public class Vector_pratice {
 		v.remove(index);
 	}
 	
+	public static void update(Vector v,int index,String str){
+		v.set(index, str);
+	}
+	
 	public static void main(String[] args) {
 		Vector v = new Vector();
 		
@@ -30,6 +34,9 @@ public class Vector_pratice {
 		System.out.println(v);
 		
 		remove2(v,2);
+		System.out.println(v);
+		
+		update(v,1,"3");
 		System.out.println(v);
 	}
 
