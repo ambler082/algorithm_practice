@@ -12,6 +12,10 @@ public class Arraylist_pratice {
 	public static void remove_2(ArrayList list,int index){
 		list.remove(index);
 	}
+	
+	public static void update(ArrayList list,int index,String str){
+		list.set(index, str);
+	}
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList<String>();
 
@@ -28,6 +32,9 @@ public class Arraylist_pratice {
 		System.out.println(list);
 		
 		remove_2(list,0);
+		System.out.println(list);
+		
+		update(list,0,"c");
 		System.out.println(list);
 	}
 
