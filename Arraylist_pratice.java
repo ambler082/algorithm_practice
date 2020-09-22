@@ -6,6 +6,12 @@ public class Arraylist_pratice {
 		list.add(str);
 	}
 	
+	public static void remove(ArrayList list,String str){
+		list.remove(str);
+	}
+	public static void remove_2(ArrayList list,int index){
+		list.remove(index);
+	}
 	public static void main(String[] args) {
 		ArrayList list = new ArrayList<String>();
 
@@ -16,6 +22,12 @@ public class Arraylist_pratice {
 		System.out.println(list);
 		
 		add(list,"a");
+		System.out.println(list);
+		
+		remove(list,"a");
+		System.out.println(list);
+		
+		remove_2(list,0);
 		System.out.println(list);
 	}
 
